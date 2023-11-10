@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>To do list</title>
+    </head>
+    <body>
+        <h1>To do list</h1>
+        <ul>
+            {% for task in tasks%}
+                <li>{{ task.title}} - {% if task.completed %}Completed{% else %}Pending{% endif %}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
